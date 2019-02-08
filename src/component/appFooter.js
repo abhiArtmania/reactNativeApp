@@ -10,8 +10,8 @@ class AppFooter extends Component {
   render(){
     return (
       <Footer>
-        <FooterTab style={styles.inActiveTabs}>
-          <Button active style={ true ? styles.activeTabs : styles.inActiveTabs }>
+        <FooterTab>
+          <Button active>
             <Icon active name='egg'/>
             <Text>Feed</Text>
           </Button>

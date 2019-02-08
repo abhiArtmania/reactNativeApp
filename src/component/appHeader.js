@@ -9,15 +9,15 @@ class AppHeader extends Component {
 
   render(){
     return (
-      <Header style={styles.headerStyle} >
+      <Header >
         {/*<Left>
           <Button transparent>
             <Icon name='arrow-back'/>
           </Button>
         </Left>*/}
         <Body style={styles.headerBody}>
-           {/*<Text style={styles.bodyText}>S K E T C H</Text>*/}
-           <Image source={require('../assets/images/img1.jpg')} style={{width:150,height:30}}/>
+           <Text style={styles.bodyText}>A R T M A N I A <Icon name='brush'/></Text>
+           {/*<Image source={require('../assets/images/img1.jpg')} style={{width:150,height:30}}/>*/}
         </Body>
         {/*<Right>
           <Button transparent>
@@ -37,8 +37,8 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   bodyText:{
-    color:'white',
-    fontSize:15,
+    color:'#3166cc',
+    fontSize:17,
     fontWeight:'bold'
   }
 })
