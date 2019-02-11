@@ -9,7 +9,7 @@ class AppHeader extends Component {
 
   render(){
     return (
-      <Header >
+      <Header style={{paddingBottom:30, paddingTop:40}}>
         {/*<Left>
           <Button transparent>
             <Icon name='arrow-back'/>
