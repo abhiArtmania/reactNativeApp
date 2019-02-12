@@ -92,8 +92,7 @@ class AppBodyData extends Component {
             <DoubleBounce style={{textAlign:'center',alignItem:'center'}} size={20} color="#3166cc" />
           </View>}
       </Content>
-      { this.state.visibleModal ? <View style={styles.container}>
-      <Modal
+      { this.state.visibleModal ? <Modal
         isVisible={this.state.visibleModal}
         backdropColor={'#134604a3'}
         backdropOpacity={1}
@@ -111,8 +110,7 @@ class AppBodyData extends Component {
         }}
       >
         {this._renderModalContent()}
-      </Modal>
-      </View>: null}
+      </Modal>: null}
       </Container>
     )
   }

@@ -56,7 +56,7 @@ class AppFooter extends Component {
           <Button active={activeTab === 'instagram'} onPress={()=>{
             this.tabAction('instagram')
           }}>
-            <Icon name='person'/>
+            <Icon name='logo-instagram'/>
             <Text>Instagram</Text>
           </Button>
         </FooterTab>

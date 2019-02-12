@@ -23,7 +23,7 @@ export default class MyProject extends Component {
       <Container>
         <Router>
           <Stack key="root">
-            <Scene key='feed' component={AppBody} title='Feed' hideNavBar={true}/>
+            <Scene key='feed' component={AppBody} title='Feed' hideNavBar={true} initial = {true}/>
             <Scene key='gallery' component={Gallery} title='Gallery' hideNavBar={false}/>
             <Scene key='about' component={About} title='About' hideNavBar={false}/>
             <Scene key='instagram' component={Instagram} title='Instagram' hideNavBar={false}/>
