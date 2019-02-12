@@ -11,6 +11,10 @@ class AppFooter extends Component {
     }
   }
 
+  componentWillMount(){
+    //alert(Actions.currentScene)
+  }
+
   tabAction = (tab) => {
     this.setState({
       activeTab:tab
@@ -21,6 +25,8 @@ class AppFooter extends Component {
       Actions.gallery()
     } else if(tab == 'about'){
       Actions.about()
+    } else if(tab == 'instagram'){
+      Actions.instagram()
     }
   }
 
@@ -46,6 +52,12 @@ class AppFooter extends Component {
           }}>
             <Icon name='person'/>
             <Text>About</Text>
+          </Button>
+          <Button active={activeTab === 'instagram'} onPress={()=>{
+            this.tabAction('instagram')
+          }}>
+            <Icon name='person'/>
+            <Text>Instagram</Text>
           </Button>
         </FooterTab>
       </Footer>
